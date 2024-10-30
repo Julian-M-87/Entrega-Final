@@ -52,42 +52,27 @@ botonReiniciar.on('click', reiniciar)
 
 function inicio() {
     var imagenes = $('#img-box img')
-    soltarImg = $('#drop-box')
-    soltarImg2 = $('#drop-box2')
-    soltarImg3 = $('#drop-box3')
+    let soltarImg = $('#drop-box')
+    let soltarImg2 = $('#drop-box2')
+    let soltarImg3 = $('#drop-box3')
     console.log(imagenes.length)
     console.log(imagenes)
+    let soltarImgs = [soltarImg, soltarImg2, soltarImg3]
 
 
     imagenes.each(function () {
         $(this).on('dragstart', arrastrar);
     });
 
-    soltarImg.on('dragenter', function (event) {
-        event.preventDefault();
+    soltarImgs.forEach((imagen) => {
+        imagen.on('dragenter', function (event) {
+            event.preventDefault();
+        });
+        imagen.on('dragover', function (event) {
+            event.preventDefault();
+        });
+        imagen.on('drop', soltar);
     });
-    soltarImg.on('dragover', function (event) {
-        event.preventDefault();
-    });
-    soltarImg.on('drop', soltar);
-
-
-    soltarImg2.on('dragenter', function (event) {
-        event.preventDefault();
-    });
-    soltarImg2.on('dragover', function (event) {
-        event.preventDefault();
-    });
-    soltarImg2.on('drop', soltar);
-
-
-    soltarImg3.on('dragenter', function (event) {
-        event.preventDefault();
-    });
-    soltarImg3.on('dragover', function (event) {
-        event.preventDefault();
-    });
-    soltarImg3.on('drop', soltar);
 };
 
 function arrastrar(event) {
