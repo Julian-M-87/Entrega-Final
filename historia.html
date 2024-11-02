@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="flex-s-between">
         <a href="/">
             <svg>
                 <rect x="45" y="5" width="80" height="50" class="pc-1" fill="#767a81de" stroke="#2F3645"
@@ -32,20 +32,20 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a class="nav-link" href="./historia.html">HISTORIA</a>
+                <a class="nav-link c-white" href="./historia.html">HISTORIA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./juego.html">JUGUEMOS</a>
+                <a class="nav-link c-white" href="./juego.html">JUGUEMOS</a>
             </li>
         </ul>
     </nav>
-    <header id="header-historia">
-        <h1 class="title-white blue-back">HISTORIA DE LA PROGRAMACION</h1>
+    <header id="header-historia" class="flex-center-all">
+        <h1 class="title-white blue-back flex-center-all">HISTORIA DE LA PROGRAMACION</h1>
     </header>
-    <main class="container-historia">
+    <main class="container-historia flex-center-all">
         <div class="tarjeta-historia">
             <img src="./assets/imagenes/1-800x534.jpg" alt="Programadores sentados alrededor de una computadora">
-            <div class="texto-tarjeta">
+            <div class="texto-tarjeta flex-s-between">
                 <h2>El principio de la historia de la programacion</h2>
                 <p class="texto-hist">
                     el primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883.
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="tarjeta-historia tarjeta-2">
-            <div class="texto-tarjeta">
+            <div class="texto-tarjeta flex-s-between">
                 <h2>Lenguaje de ensamblaje</h2>
                 <p class=" texto-hist">
                     Los primeros ordenadores mmodernos (alimentados eléctronicamente) fueron creados en los años 40.
@@ -80,7 +80,7 @@
         </div>
         <div class="tarjeta-historia">
             <img src="./assets/imagenes/img-historia.jpg" alt="Hombre y mujer trabajando en computación">
-            <div class="texto-tarjeta">
+            <div class="texto-tarjeta flex-s-between">
                 <h2>Los primeros lenguajes de programación</h2>
                 <div style="width: 90%;">
                     <p>
@@ -126,14 +126,14 @@
             </div>
         </div>
     </main>
-    <article class="contenedor-video">
+    <article class="contenedor-video flex-center-all">
         <h2>Hablemos un poquito mas...</h2>
         <section class="contenedor-reproductor">
             <video poster="./assets/imagenes/img-video.jpg">
                 <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                 <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
             </video>
-            <div class="barra-video">
+            <div class="barra-video flex-s-between">
                 <div class="video-player">
                     <button id="play" class="boton-video">
                         <img src="./assets/imagenes/play.svg" alt="Simbolo de Play">
@@ -142,11 +142,11 @@
                         <img src="./assets/imagenes/pausa.svg" alt="Simbolo de Pausa">
                     </button>
                 </div>
-                <p id="tiempoVideo">4:41</p>
+                <p class="c-white" id="tiempoVideo">4:41</p>
             </div>
         </section>
     </article>
-    <footer>
+    <footer class="c-white flex-s-between">
         <div class="footer-div">
             <img src="./assets/imagenes/logo.png" alt="logo de la pagina">
             <h3 class="title-white footer-title">

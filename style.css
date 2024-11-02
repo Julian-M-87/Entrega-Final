@@ -16,19 +16,13 @@ li {
 
 header {
     height: 100vh;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 nav {
     z-index: 4;
     position: fixed;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     padding: 40px;
     transition: background-color 1s;
@@ -60,11 +54,7 @@ img {
 
 footer {
     background: #2F3645;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 90px;
-    color: #FFFFFF;
 }
 
 video {
@@ -79,6 +69,22 @@ video {
 .pc-2 {
     animation: animacion_2 ease-in 5s;
     animation-iteration-count: 1;
+}
+
+.flex-center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-s-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-white {
+    color: #FFFFFF;
 }
 
 .codigo {
@@ -111,7 +117,6 @@ video {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: 500;
-    color: #FFFFFF;
     text-shadow: 1px 1px #808080, 2px 3px #000000;
 }
 
@@ -136,10 +141,7 @@ video {
     width: 450px;
     height: 500px;
     gap: 40px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .img-tarjeta {
@@ -161,7 +163,6 @@ video {
     text-decoration: none;
     width: 80%;
     margin-bottom: 20px;
-    color: #FFFFFF;
 }
 
 .footer-div {
@@ -179,17 +180,10 @@ video {
     background: #2F3645b3;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .container-historia {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 80px;
 }
 
@@ -206,10 +200,7 @@ video {
 }
 
 .texto-tarjeta {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     gap: 40px;
     width: 80%;
 }
@@ -219,10 +210,7 @@ video {
 }
 
 .contenedor-video {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 100px 0px;
     gap: 80px;
 }
@@ -237,9 +225,6 @@ video {
     background-color: #2F3645;
     border-radius: 10px;
     padding: 20px 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .video-player {
@@ -280,16 +265,9 @@ video {
 .box {
     width: 275px;
     height: 400px;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     border: 2px solid #000000;
     background-color: #808080;
-}
-
-.box>p {
-    color: #FFFFFF;
 }
 
 .img-box {
@@ -306,16 +284,15 @@ video {
     border: none;
     border-radius: 0px;
     background-color: #2F3645;
-    color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 300;
+    text-decoration: none;
 
 }
 
 #tiempoVideo {
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
 }
 
 #header-index {
@@ -331,6 +308,10 @@ video {
 
 #pausa {
     width: 80px;
+}
+
+#reiniciar {
+    color: #FFFFFF;
 }
 
 
